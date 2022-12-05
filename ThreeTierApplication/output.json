@@ -1,0 +1,95 @@
+{
+    "meta-data": {
+        "ami-id": "ami-0b0dcb5067f052a63", 
+        "ami-launch-index": 0, 
+        "ami-manifest-path": "(unknown)", 
+        "autoscaling": {
+            "target-lifecycle-state": "InService"
+        }, 
+        "block-device-mapping": {
+            "ami": "/dev/xvda", 
+            "root": "/dev/xvda"
+        }, 
+        "events": {
+            "maintenance": {
+                "history": [], 
+                "scheduled": []
+            }
+        }, 
+        "hostname": "ip-10-0-0-4.ec2.internal", 
+        "identity-credentials": {
+            "ec2": {
+                "info": {
+                    "AccountId": "363164890676", 
+                    "Code": "Success", 
+                    "LastUpdated": "2022-12-03T08:46:58Z"
+                }, 
+                "security-credentials": {
+                    "ec2-instance": {
+                        "AccessKeyId": "ASIAVJDSQOY2PK5QSD7C", 
+                        "Code": "Success", 
+                        "Expiration": "2022-12-03T15:00:36Z", 
+                        "LastUpdated": "2022-12-03T08:46:31Z", 
+                        "SecretAccessKey": "3opakxKjq/1EIZum+y6IRJ2oyaVy8ek8PrXefr39", 
+                        "Token": "IQoJb3JpZ2luX2VjEKH//////////wEaCXVzLWVhc3QtMSJHMEUCIQDqQfP30ylOE+hWSMvPB48VHNc/SrpH2YEdkOMfCaDvfwIgZAfBLrVHZ3DJxHxNQE50ANmCmzYyZcgegEQC1HqtD+8qzwQIuv//////////ARADGgwzNjMxNjQ4OTA2NzYiDD/na/RgbgWrqMnHGyqjBMcLCjeZf8p9TTTRUf4zKbmRjVw/94/dso6ABl1+/h2SdVR2a9BGTpS7Ge/EO/erTciLNKKk2T1hgFvOOkRslmUuFtyYPTQVuY4XRczAHBQpnUMNENZIOHi4UAYjxlZToYO8hv2+enT47ZUQiorU4PJGexPoz+jmbL/XQO+mFTbgSZJNz/9uDFLqzauga6YVUdIOyeHP+BZItBBOweJ8A8bam/LDNzRzSdtIeX4B0U7CJBXvIkaUx82JQdOA0A7pkrwBMgGmA2xfiLM/lDIoRC3YNILmfWc8EMUqbQgDdYikefbEbhzXY9llCZ7zq6PHXHqu50foAz0dkrA7L6Hqx0P4KVlw4bMPpo4r2f8Jnk98ThtGBqZERDNhx41+XB0/5RmD5XDqf8a3UtmDv0Iv+pFu/9cJ8XyOWtdDuXXepqo0C8BBN1D1jD62ovL/wQT50M4Soeqy2yr3bKG+a+GYxEhgph8Uh8EDdIpzEcT6s1CJ8eOmOUbTeVO2LbBCv6zhzLWIiDPXX+9j6FdTF4kjwlxsQ2PmuQhY+ZYPGqBPAHqVXcCxXXEZozRjkacjJAUK/PLFNPF20NT/7w/k+K4u4u5hnysUQeAyORs2quSDhlD22jc+E6m2aqeFRoo8KXa36/7KbbIYAShyO7JcWqs9JSWMi1kxtQPKJcH7CS8W1oJSrv4A3CRRvhvyjLecyBWuxHmE8+wd69jYV5FRhOY+eO+Jyosw8pmsnAY6kwLC2thqRs6w22Cc/iVG90ddT4KN1jluhiAMH73rJkOdXB2tdYJSC2nSvekZZAmcpep+PqwLrT+DW0m4iCvQ3xdJOdHAHV2h6WqsO9hGZg/wx1ORQi0IGi2X00ShHmwmb7RhOxUUaMaA6i6NzlImONCf0kTHj/cnVxnbwumaNXdD2fA/5eRqkMejL+EOlLI1dwjeWXv9Lzkr7YYNlUACxitClRkfWqgvjQ4V+tQiB8LYnbPSFphEfxnTVd6OsuwFM45ABvDuCbvhgQeze3FYAgWt0BrnPK4zzgFX0bm6vzMcVV7+8eu4wI4OzvNJiqOzveBX5TpcrqZGaqBpFLqQa6PED3IpkJfwag/mt1OW9RrmU+xzhg==", 
+                        "Type": "AWS-HMAC"
+                    }
+                }
+            }
+        }, 
+        "instance-action": "none", 
+        "instance-id": "i-0a5a39a7d9ad8b5f8", 
+        "instance-life-cycle": "on-demand", 
+        "instance-type": "t2.micro", 
+        "local-hostname": "ip-10-0-0-4.ec2.internal", 
+        "local-ipv4": "10.0.0.4", 
+        "mac": "0a:b3:e7:90:1d:49", 
+        "metrics": {
+            "vhostmd": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+        }, 
+        "network": {
+            "interfaces": {
+                "macs": {
+                    "0a:b3:e7:90:1d:49": {
+                        "device-number": 0, 
+                        "interface-id": "eni-01494fb1a5f98283e", 
+                        "ipv4-associations": {
+                            "54.234.118.147": "10.0.0.4"
+                        }, 
+                        "local-hostname": "ip-10-0-0-4.ec2.internal", 
+                        "local-ipv4s": "10.0.0.4", 
+                        "mac": "0a:b3:e7:90:1d:49", 
+                        "owner-id": 363164890676, 
+                        "public-hostname": "ec2-54-234-118-147.compute-1.amazonaws.com", 
+                        "public-ipv4s": "54.234.118.147", 
+                        "security-group-ids": "sg-0f7c816357792b859", 
+                        "security-groups": "EC security group", 
+                        "subnet-id": "subnet-095ddbd9ac3008686", 
+                        "subnet-ipv4-cidr-block": "10.0.0.0/24", 
+                        "vpc-id": "vpc-03552e08d4569ce70", 
+                        "vpc-ipv4-cidr-block": "10.0.0.0/16", 
+                        "vpc-ipv4-cidr-blocks": "10.0.0.0/16"
+                    }
+                }
+            }
+        }, 
+        "placement": {
+            "availability-zone": "us-east-1a", 
+            "availability-zone-id": "use1-az4", 
+            "region": "us-east-1"
+        }, 
+        "profile": "default-hvm", 
+        "public-hostname": "ec2-54-234-118-147.compute-1.amazonaws.com", 
+        "public-ipv4": "54.234.118.147", 
+        "public-keys": {
+            "0=TF_key": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n <head>\n  <title>404 - Not Found</title>\n </head>\n <body>\n  <h1>404 - Not Found</h1>\n </body>\n</html>\n"
+        }, 
+        "reservation-id": "r-0db1bada3cbd8bd27", 
+        "security-groups": "EC security group", 
+        "services": {
+            "domain": "amazonaws.com", 
+            "partition": "aws"
+        }, 
+        "system": "xen"
+    }
+}
