@@ -13,7 +13,7 @@ targetBaseUrl = 'http://169.254.169.254'
 defaultApiVersion = 'latest'
 rootNodeKey = "meta-data/"
 targetUrl = targetBaseUrl + "/" + defaultApiVersion + "/"
-ic(targetUrl)
+#ic(targetUrl)
 
 # Constants
 ec_username = "ec2-user"
