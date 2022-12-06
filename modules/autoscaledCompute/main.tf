@@ -68,8 +68,6 @@ resource "aws_launch_template" "app_launch_template" {
   key_name      = aws_key_pair.TF_key.key_name
   user_data     = filebase64("${path.module}/installApp.sh")
 
-  #vpc_security_group_ids         = ["${var.ec_security_group_id}"]
-
   network_interfaces {
     associate_public_ip_address  = true
     security_groups              = ["${var.ec_security_group_id}"]
@@ -185,8 +183,6 @@ resource "aws_launch_template" "bastion_launch_template" {
   image_id      = "ami-0b0dcb5067f052a63"
   instance_type = var.instance_type
   key_name      = aws_key_pair.TF_key.key_name
-  #user_data     = filebase64("${path.module}/installApp.sh")
-
 
   network_interfaces {
     associate_public_ip_address  = true
@@ -212,7 +208,7 @@ resource "aws_autoscaling_group" "bastion_autoscaling_group" {
   health_check_type         = var.asg_health_check_type                           #  "ELB" or default EC2
   force_delete              = true
   vpc_zone_identifier       = [var.public_subnet_az1_id,var.public_subnet_az2_id]
-  target_group_arns         = [var.alb_target_group_arn]
+  #target_group_arns         = [var.alb_target_group_arn]
 
   enabled_metrics = [
                         "GroupMinSize",

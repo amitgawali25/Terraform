@@ -56,11 +56,11 @@ if __name__ == '__main__':
 
     print("\n<<<< Running version 1 >>>>\n")
 
-    object = {'a': {'b': {'c':'d'}}}
-    print("Key ", 'a -', "Value - ", nestedLookup(object, 'a',1))
-    print("Key ", 'b -', "Value - ", nestedLookup(object, 'b',1))    
-    print("Key ", 'c -', "Value - ", nestedLookup(object, 'c',1))
-    print("Key ", 'x -', "Value - ", nestedLookup(object, 'x',1))
+    object1 = {'a': {'b': {'c':'d'}}}
+    print("Key ", 'a -', "Value - ", nestedLookup(object1, 'a',1))
+    print("Key ", 'b -', "Value - ", nestedLookup(object1, 'b',1))    
+    print("Key ", 'c -', "Value - ", nestedLookup(object1, 'c',1))
+    print("Key ", 'x -', "Value - ", nestedLookup(object1, 'x',1))
 
     object2 = {'x': {'y': {'z':'a'}}}
     print("Key ", 'x -', "Value - ", nestedLookup(object2, 'x',1))

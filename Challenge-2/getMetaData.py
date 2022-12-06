@@ -3,9 +3,10 @@ import json
 import sys
 import getopt
 from icecream import ic
+import os
 
 ic.configureOutput(prefix='Debug | ')
-ic.disable()
+#ic.disable()
 
 # form target URL for IMDSv1
 targetBaseUrl = 'http://169.254.169.254'
@@ -14,6 +15,8 @@ rootNodeKey = "meta-data/"
 targetUrl = targetBaseUrl + "/" + defaultApiVersion + "/"
 ic(targetUrl)
 
+# Constants
+ec_username = "ec2-user"
 
 # Recursive Nested lookup into a JSON object for a key
 def searchForKeyValues(data, values, trail, targetKey):
@@ -84,17 +87,23 @@ def isValidJson(inputStr):
         return False
     return True
 
-def buildJsonByKey(key):    
-    # Using a sample file for local testing.
-    f = open('/Users/amit/Development/Terraform Modules/ThreeTierApplication/output.json',"r")
-    jsonMeta = json.load(f)
-    result = nestedLookup(jsonMeta, key)
+def buildJsonByKey(key):  
 
+    user = os.environ.get("USER")
+    ic(user)
+  
+    if(user != ec_username):
+        ic("Running locally - using sample JSON")
+        # Using a sample file for local testing.
+        f = open('/Users/amit/Development/Terraform/Challenge-2/output.json',"r")
+        jsonMeta = json.load(f)
+        result = nestedLookup(jsonMeta, key)
+    else:
+        ic("Running on an EC2 instance - using IMDSv1 apis")
 
-    # un-comment the following while running on EC2
-    #jsonMetaStr = buildJsonMetadata()
-    #jsonMeta = json.loads(jsonMetaStr)
-    #result = nestedLookup(json.loads(jsonMetaStr), key)
+        jsonMetaStr = buildJsonMetadata()
+        jsonMeta = json.loads(jsonMetaStr)
+        result = nestedLookup(json.loads(jsonMetaStr), key)
 
     return result
 
